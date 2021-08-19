@@ -1,0 +1,1 @@
+My solution for the "Check the login" task - https://javascript.info/task/check-login
