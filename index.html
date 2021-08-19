@@ -16,9 +16,35 @@
     <div class="container">
         <h1>"Check the login" with JS</h1>
         <h2>Use these to make it work:</h2>
-        <p>User:</p>
-        <p>Password:</p>
+        <p>User: Admin</p>
+        <p>Password: TheMaster</p>
     </div>
+
+    <script>
+        let userName = prompt("Please enter username:");
+        if(userName === "Admin"){
+            let password = prompt("Hello Admin. Please enter your password:");
+            if(password === "TheMaster"){
+                alert("Welcome!");
+            } else if (password == "" || password == null){
+                alert("Canceled.");
+            } else {
+                alert("Wrong password!");
+            }
+        } else if (userName == "" || userName == null) {
+            alert("Canceled");
+        } else {
+            alert("I don't know you.")
+        }
+
+        let message = "Welcome " + userName;
+
+        const div = document.querySelector('div');
+
+        let para1 = document.createElement('p');
+        para1.textContent = message;
+        div.appendChild(para1);
+    </script>
     
 </body>
 </html>
